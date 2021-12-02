@@ -88,7 +88,7 @@ class edge_t {
 class csr_t {
     public:
         vid_t * offset;
-        char * Nebr;
+        vid_t * Nebr;
         vid_t dst_size;
         vid_t v;
         vid_t  e_count;
@@ -100,7 +100,7 @@ class csr_t {
             v        = a_vcount;
             dst_size = a_dstsize;
             offset   = (vid_t * ) a_offset;
-            Nebr     = (char * ) a_nebrs;
+            Nebr     = (vid_t * ) a_nebrs;
             e_count  = offset[v];
         }
 
